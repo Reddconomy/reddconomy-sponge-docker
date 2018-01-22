@@ -84,7 +84,7 @@ fi
 if [ "$REDDCONOMY_CONFIG" != "" ];
 then
   mkdir -p config
-  echo -e "$REDDCONOMY_CONFIG" > config/reddconomy-sponge.conf
+  echo -e "$REDDCONOMY_CONFIG" > config/reddconomy-sponge.json
 fi
 
 # Start server

@@ -21,8 +21,10 @@ online-mode=true
 spawn-protection=40
 ' \
 -eREDDCONOMY_CONFIG='
-secretkey="changeme"
-url="http://changeme:8099"
+{
+"secretkey":"changeme",
+"url":"http://127.0.0.1:8099"
+}
 ' \
 reddconomy-sponge_test:amd64
 ```
@@ -39,8 +41,10 @@ online-mode=true
 spawn-protection=40
 ' \
 -eREDDCONOMY_CONFIG='
-secretkey="changeme"
-url="http://changeme:8099"
+{
+"secretkey":"changeme",
+"url":"http://127.0.0.1:8099"
+}
 ' \
 reddconomy-sponge_test:amd64
 ```

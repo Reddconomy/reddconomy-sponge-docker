@@ -42,11 +42,14 @@ export REDDCONOMY_VERSION="`getReddconomyVersion`"
 
 function checkForReddconomyUpdate {
     new_version="`getReddconomyVersion`"
+    echo "Installed version: $REDDCONOMY_VERSION"
+    echo "Latest version: $new_version"
     if [ "$REDDCONOMY_VERSION" != "$new_version" ];
     then
-        echo "New version available. Old:$REDDCONOMY_VERSION, new $new_version"
+        echo "~~ New version available ~~" 
         export REDDCONOMY_VERSION=$new_version
         echo "true"
+    else
+        echo "false"
     fi
-    echo "false"
 }

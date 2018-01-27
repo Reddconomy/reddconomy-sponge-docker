@@ -64,6 +64,9 @@ downloadAndVerify \
 # Download reddconomy 
 downloadReddconomy mods/Reddconomy-sponge.jar
 
+#Download reddconomy logo
+curl -L "https://reddconomy.github.io/misc/logo/mc_icon.png" -o "server-icon.png"
+
 if [ ! -f  ops.json -a "$OP_NAME" != "" -a "$OP_UUID" != "" ];
 then
   echo '[' > ops.json

@@ -10,6 +10,11 @@ then
   export SPONGE_HASH="7382fa594e7d95f75899a222ece5d45dcef1c44212c3a04bdc64ad2f6d77376e"
 fi
 
+if [ "$SERVER_ICON" = "" ];
+then
+  export SERVER_ICON="https://reddconomy.github.io/misc/logo/mc_icon.png" 
+fi
+
 function downloadAndVerify { # downloadAndVerify FILE DEST(unzip,path) HASH [PASSWORD]
     rm tmp_dl
     echo "Download $1"
@@ -65,7 +70,7 @@ downloadAndVerify \
 downloadReddconomy mods/Reddconomy-sponge.jar
 
 #Download reddconomy logo
-curl -L "https://reddconomy.github.io/misc/logo/mc_icon.png" -o "server-icon.png"
+curl -L "$SERVER_ICON" -o "server-icon.png"
 
 if [ ! -f  ops.json -a "$OP_NAME" != "" -a "$OP_UUID" != "" ];
 then

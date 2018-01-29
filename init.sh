@@ -1,6 +1,6 @@
 #!/bin/bash
+sleep 60
 source /reddconomy_updater.sh
-sleep 5
 
 cd /minecraft
 
